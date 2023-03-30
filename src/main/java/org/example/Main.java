@@ -52,19 +52,29 @@ public class Main {
             }
         }
     }
-
     public static double [][] generarMatrizStandar(){ //matriz 5 50 llena de 0
-        double matriz[][] = new double[5][50];
+        double[][] matriz = new double[5][50];
         for (int i = 0; i < matriz.length; i++) {
-            System.out.println();
-            for (int j = 0; j < matriz[0].length; j++) {
-                System.out.print(matriz[i][j] + "\t");
+            for (int j = 0; j < matriz[i].length; j++) {
+                matriz[i][j] = 0.0;
             }
         }
 
         return matriz;
     }
+
+    public static void mostrarMatriz(double [][] matriz){
+        for (int i = 0; i < matriz.length; i++) {
+            System.out.println("");
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j] + "\t");
+
+            }
+        }
+
+    }
     public double sumarFilas(){
+
 
     }
 
